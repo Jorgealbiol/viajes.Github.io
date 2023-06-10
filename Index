@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #0099ff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg");
+}
+.header:hover {
+
+  background-color: rgb(211, 46, 46) }
+
+
+.header h1 {
+  font-size: 50px;
+  color:rgb(0, 0, 0)
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(255, 255, 255);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  padding-right: 2%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Viaje a Francia</h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="#Información sobre la reserva.">Informacion sobre la reserva</a>
+  <a href="#Las actividades que tendrán preparadas para estas vacaciones serán:">Actividades</a>
+  <a href="#Para relajarse también tenemos sitios como:">Para relajarse</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2>Un viaje a Francia.<h2>
+            En esta página web podras encontrar las actividades que se realizaran en Francia.</h2>
+         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt=" bandera de Francia" width="250">
+      
+      
+    </div>
+    <div class="card">
+        <h1 id ="Información sobre la reserva." > Informacion sobre la reserva</h1>
+        <h3> Esta reserva incluye:</h3>
+        <ul>
+            <li> Alojamiento en nuestro hotel de 4 estrellas.
+            <li>La comida la proporcionará el hotel, será una barra libre y habrá desayuno, comida y cena.
+            <li>Transporte con el cual te podrás desplazar por la capital.
+        </ul>
+        <h3 id="Las actividades que tendrán preparadas para estas vacaciones serán:"> Las actividades que tendrán preparadas para estas vacaciones serán:</h3>
+            <ul>
+                <li>Un crucero por el río Sena.
+                <li>Una visita por el castillo de Chamboard.
+                <li>Entrada a la torre Eiffel.
+                <li>Entrada al museo del Louvre
+                <li>Y por último una entrada para acceder a Disneyland París
+               </ul>
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chambord_Castle_Northwest_facade.jpg/1920px-Chambord_Castle_Northwest_facade.jpg" alt ="castillo de Chamoard"width="335">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Eiffelturm.JPG/800px-Eiffelturm.JPG" alt ="torrer Eiffel"width="100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/1920px-Louvre_Museum_Wikimedia_Commons.jpg" alt="museo del louvre" width="335">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sleeping_Beauty_Castle_Disneyland_Anaheim_2013.jpg/1280px-Sleeping_Beauty_Castle_Disneyland_Anaheim_2013.jpg" alt="museo del louvre" width="161">
+                <ul></ul>
+
+             Si alguna de estas actividades no te gusta, o simplemente no tienes tiempo, no te obligamos a seguir nuestro plan de actividades. Podrás romper este plan como y cuando quieras.
+       <h3 id="Para relajarse también tenemos sitios como:">Para relajarse también tenemos sitios como:</h3>
+        <ul>
+           <li> Piscinas interiores y exteriores climatizadas.
+          <li>  También tenemos una sauna, jacuzzi.
+           <li> Un Gym en la planta baja del hotel.
+           
+        <h3>Si desea venir y pasar una de las mejores experiencias en nuestro hotel, contáctenos y le haremos saber todo tipo de precios y detalles. </h3>
+      
+      <h5>Aqui os dejo un video sobre el pais.</h5>
+      <div  style="height:200px;"><iframe width="560" height="220" src="https://www.youtube.com/embed/_n6GHaADUOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    
+    </div>
+  
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Somos la empresa de viajes más grande de ESPAÑA!</h2>
+      <div style="height:1px;"></div><img src="https://i.ytimg.com/vi/-bMgcG_Q_MI/frame0.jpg"
+    
+      
+    
+    <div class="card">
+      <h2>Mis redes sociales:</h2>
+</div>
+    <div clMy Website
+    ong><strong>Twitter :</strong> Manelo el travelo12 <br>
+        <strong>Instagram :</strong> Maneltravel12<br>
+        <strong> Pinterest : </strong>Manel12 <br>
+        <strong>Youtube :</strong> Manutravel<br>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Para más información <a href="https://www.edreams.es/" target="_blank">pulse aquí</a></h2>
+</div>
+
+</body>
+</html>
